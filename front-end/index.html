@@ -34,6 +34,7 @@
         .password-wrapper {
             display: flex;
             align-items: center;
+            
         }
 
         .password {
@@ -43,21 +44,28 @@
         }
 
         .password input {
-            height: 2em;
-            outline: none;
-            border: solid rgb(218, 215, 215) 1px;
+            width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
         }
 
         .password button {
-            background: white;
-            height: 2em;
-            outline: none;
-            border: solid rgb(218, 215, 215) 1px;
+           width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
         }
 
         .password button:hover {
-            color: white;
-            background: rgb(218, 215, 215);
+            background-color: #45a049;
         }
 
         pre * {
@@ -174,6 +182,9 @@
             height: 100%;
             margin: 0;
             padding: 0;
+            background: url(img_tree.gif) left top no-repeat, url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+  padding: 15px;
+  background-size: 50px, 130px, auto;
         }
 
         .header-wrapper {
@@ -232,7 +243,15 @@
             cursor: pointer;
         }
 
-
+.nav-path:hover,
+        .tree-node:hover,
+        .row.file-wrapper:hover
+{
+  background-image: url(img_flwr.gif), url(paper.gif);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+ 
+}
         .container {
             position: fixed;
             width: 100%;
@@ -240,11 +259,7 @@
             margin-top: 3em;
         }
 
-        .main {
-            position: relative;
-            height: 100%;
-            width: 100%;
-        }
+  
 
         .left {
             position: absolute;

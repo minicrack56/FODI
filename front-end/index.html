@@ -745,7 +745,7 @@
             const buttonParent = button.parentElement;
             const buttonClone = button.cloneNode(true);
             buttonParent.replaceChild(buttonClone, button);
-            input.placeholder = 'Entrer le mot de passe';
+            input.placeholder = 'S il vous plaît entrer le mot de passe';
             buttonClone.addEventListener('click', event => {
                 const passwd = input.value;
                 if (!input.value) {
@@ -1333,15 +1333,16 @@
                 <div class="preview">
                     <div class="info">
                         <div class="file-name"></div>
-                        <div class="btn download">Téléchargé</div>
-                        <div class="btn quote">copié</div>
+                        <div class="btn download">Télécharger</div>
+                        <div class="btn quote">Copier</div>
+                        <div class="btn share">-</div>
                     </div>
                     <div class="content"></div>
                 </div>
                 <div class="password-wrapper">
                     <div class="password">
                         <input type="password">
-                        <button>SOUMETTRE</button>
+                        <button>soumettre</button>
                     </div>
                 </div>
             </div>

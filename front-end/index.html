@@ -745,7 +745,7 @@
             const buttonParent = button.parentElement;
             const buttonClone = button.cloneNode(true);
             buttonParent.replaceChild(buttonClone, button);
-            input.placeholder = 'S il vous plaît entrer le mot de passe';
+            input.placeholder = 'Entrer le mot de passe';
             buttonClone.addEventListener('click', event => {
                 const passwd = input.value;
                 if (!input.value) {
@@ -760,7 +760,7 @@
                     data => {
                         const newFiles = JSON.parse(data);
                         if (newFiles.encrypted) {
-                            input.placeholder = 'mauvais mot de passe';
+                            input.placeholder = 'Mauvais mot de passe';
                         } else {
                             window.fileCache.set(newFiles.parent, newFiles);
                             fetchFileList(newFiles.parent);
